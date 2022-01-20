@@ -1,0 +1,67 @@
+{
+  "name": "mjw",
+  "version": "0.0.0",
+  "description": "Moraj Lab workspace",
+  "private": true,
+  "scripts": {
+    "preinstall": "npm config set '@morajlab:registry' https://npm.pkg.github.com",
+    "test": "mjw test",
+    "prepare": "mjw hooks install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morajlab/workspace.git"
+  },
+  "keywords": [
+    "morajlab",
+    "moraj",
+    "workspace",
+    "mjw",
+    "cli",
+    "manager"
+  ],
+  "author": {
+    "name": "Morteza Jamali",
+    "email": "mortezajamali4241@gmail.com",
+    "url": "https://moraj.ir"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/morajlab/workspace/issues"
+  },
+  "homepage": "https://github.com/morajlab/workspace#readme",
+  "dependencies": {
+    "@babel/core": "^7.16.7",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "@morajlab/npm.config.prettier": "^0.0.1-alpha",
+    "@morajlab/npm.config.typescript": "^0.0.1-alpha",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-interactions": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/builder-webpack5": "^6.4.9",
+    "@storybook/manager-webpack5": "^6.4.9",
+    "@storybook/react": "^6.4.9",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "babel-loader": "^8.2.3",
+    "commitlint": "^15.0.0",
+    "esbuild": "^0.14.11",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.4",
+    "prettier": "^2.5.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "stylelint": "^14.2.0",
+    "stylelint-config-standard": "^24.0.0",
+    "ts-node": "^10.4.0",
+    "tsconfig-paths-webpack-plugin": "^3.5.2",
+    "webpack": "^5.65.0"
+  },
+  "lint-staged": {
+    "**/*": "mjw format --type prettier",
+    "**/*.py": "mjw format --type black",
+    "**/*.css": "mjw lint --type stylelint"
+  }
+}
