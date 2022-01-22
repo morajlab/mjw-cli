@@ -6,7 +6,7 @@
   "scripts": {
     "preinstall": "npm config set '@morajlab:registry' https://npm.pkg.github.com",
     "test": "mjw test",
-    "prepare": "mjw hooks install"
+    "prepare": "mjw hook --install"
   },
   "repository": {
     "type": "git",

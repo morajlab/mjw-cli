@@ -1,7 +1,7 @@
 from cement import App, TestApp, init_defaults
 from cement.core.exc import CaughtSignal
 from .core.exc import CLIError
-from .controllers import base, story, cache, lint, format, info, watch
+from .controllers import base, story, cache, lint, format, info, watch, hook, test
 
 # configuration defaults
 CONFIG = init_defaults("cli", "plugin.mjwplugin")
@@ -46,6 +46,8 @@ class CLI(App):
             format.Format,
             info.Info,
             watch.Watch,
+            hook.Hook,
+            test.Test
         ]
 
 

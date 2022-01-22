@@ -1,4 +1,4 @@
-.PHONY: clean virtualenv test docker dist dist-upload
+.PHONY: clean virtualenv test docker dist dist-upload install
 
 clean:
 	find . -name '*.py[co]' -delete
@@ -29,3 +29,8 @@ dist: clean
 
 dist-upload:
 	twine upload dist/*
+
+
+install:
+	make virtualenv
+	yarn
