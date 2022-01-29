@@ -36,6 +36,7 @@
     "@commitlint/config-conventional": "^15.0.0",
     "@morajlab/npm.config.prettier": "^0.0.1-alpha",
     "@morajlab/npm.config.typescript": "^0.0.1-alpha",
+    "@morajlab/npm.config.nextjs": "0.0.1-alpha",
     "@storybook/addon-actions": "^6.4.9",
     "@storybook/addon-essentials": "^6.4.9",
     "@storybook/addon-interactions": "^6.4.9",

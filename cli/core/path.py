@@ -25,6 +25,10 @@ def getPipEnvBinPath(name):
     return getProjectAbsPath("env", "bin", name)
 
 
+def getExtPath(*path):
+    return getProjectAbsPath("cli", "ext", *path)
+
+
 def getCurrentAbsPath(path="."):
     if os.path.isabs(path):
         return os.path.abspath(path)
