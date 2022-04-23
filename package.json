@@ -4,9 +4,8 @@
   "description": "Moraj Lab workspace manager cli",
   "private": true,
   "scripts": {
-    "preinstall": "npm config set '@morajlab:registry' https://npm.pkg.github.com",
-    "test": "mjw test",
-    "prepare": "mjw hook --install"
+    "build": "./scripts/build.sh",
+    "serve": "./scripts/serve.sh"
   },
   "repository": {
     "type": "git",
@@ -32,7 +31,6 @@
   },
   "homepage": "https://github.com/morajlab/mjw-cli#readme",
   "lint-staged": {
-    "**/*": "prettier -w -u",
-    "**/*.css": "stylelint"
+    "**/*": "prettier -w -u"
   }
 }
