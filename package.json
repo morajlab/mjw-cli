@@ -1,7 +1,7 @@
 {
   "name": "mjw-cli",
   "version": "0.0.5-alpha",
-  "description": "Moraj Lab workspace manager cli",
+  "description": "MJW cli",
   "private": true,
   "scripts": {
     "build": "./scripts/build.sh",
